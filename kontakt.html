@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="kontaktstyle.css">
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="nav-container">
+    <div class="wrapper">
+        <nav>
+            <div class="logo">
+                CleverMarketing
+            </div>
+            <div class="nav-items">
+                <li>
+                    <a href="./index.html">O Nas</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Služby ▼</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Balíček správy sociálních médií</a></li>
+                      <li><a href="#">Balíček optimalizace pro vyhledávače (SEO)</a></li>
+                      <li><a href="#">Balíček online reklamy</a></li>
+                      <li><a href="#">Balíček tvorby obsahu řízeného AI</a></li>
+                    </ul>
+                  </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="./kontakt.html">Kontakt</a>
+                </li>
+            </div>
+        </nav>
+        <div class="line"></div>
+    </div>
+    <div class="frontpage">
+        <h1>Nevahejte a kontaktujte</h1>
+        <p>Vyberte si jeden z nasich orientacnich služeb v oblasti online marketingu.</p>
+        <a href="#" class="button">Kontaktovat Nás</a>
+    
+      <div class="contact-form">
+        <form action="send-email.php" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+          
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+          
+            <label for="checklist">Vase cile:</label>
+            <div id="checklist">
+              <input type="checkbox" id="option1" name="option1">
+              <label for="option1">Výzkum a analýza</label><br>
+          
+              <input type="checkbox" id="option2" name="option2">
+              <label for="option2"> Plánování a strategie</label><br>
+          
+              <input type="checkbox" id="option3" name="option3">
+              <label for="option3">Tvorba obsahu</label><br>
+          
+              <input type="checkbox" id="option4" name="option4">
+              <label for="option4">Implementace</label><br>
+          
+              <input type="checkbox" id="option5" name="option5">
+              <label for="option5"> Analýza a zprávy</label><br>
+          
+              <input type="checkbox" id="option6" name="option6">
+              <label for="option6">Optimalizace</label><br>
+            </div>
+          
+            <button type="submit" name="submit">Submit</button>
+          </form>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,253 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the navigation bar */
+.nav-container {
+    background-color: #ffffff;
+    color: black;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+    margin-top:-15px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-top:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+
+.nav-items li {
+    list-style-type: none;
+    margin-right: 40px;
+    margin-left: 1cm;
+}
+
+.nav-items li a {
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+.nav-items li a:hover {
+    background: linear-gradient(to right, #640792, #f450ec, #0f07ff, #9901eb, #3ca0e7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.line {
+    width: 75.5%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    left: 180px;
+    
+    align-self: center;
+     }
+  
+/* Styles for the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px -1px #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ccc;
+}
+
+.dropdown-menu li:first-child {
+    border-top: none;
+}
+
+.dropdown-menu li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu li a:hover {
+    background: linear-gradient(to right, #640792, #f450ec, #0f07ff, #9901eb, #3ca0e7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.frontpage {
+    display: flex;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, #ffffff, #CCCCCC);
+    height: 100vh;
+    padding: 10px;
+    margin-top: 40px;
+  }
+  
+  .frontpage h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        margin-top: -20px;
+        margin-left: 11%;
+        max-width: 500px;
+      }
+      
+  
+    .frontpage p {
+        line-height: 43px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        margin-top: 150px;
+        margin-bottom: 0px;
+        margin-left: -499px;
+        max-width: 40%;
+        text-align: justify;
+    }
+    
+  
+  .frontpage .button {
+    display: inline-block;
+    background-color: #9901eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 480px;
+    margin-left: -180px;
+  }
+  
+  .frontpage .button:hover {
+    background-image: linear-gradient(to right, #8BC34A, #4CAF50, #009688, #00796B);
+  color: #ffffff;
+  transition: background-image 1s ease;
+  }
+  
+  .frontpage-text {
+    max-width: 50%;
+    margin-right: 50px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 5px auto;
+    max-width: 600px;
+  }
+  
+  .contact-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .contact-form input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: 20px;
+    width: fit-content;
+  
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #9901eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #1e97ee;
+  }
+  #checklist {
+    display: flex;
+    flex-direction: row 1 2;
+    margin-top: 15px;
+
+  }
+
+  #checklist input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: -10px;
+  }
+  
+  #checklist label {
+    font-size: 0.8rem;
+    color: #333;
+  }
